@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700i');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif';
+@import 'https://fonts.googleapis.com/css?family=EB+Garamond';
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?freep9');
+    src: url('fonts/icomoon.eot?freep9#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?freep9') format('truetype'), url('fonts/icomoon.woff?freep9') format('woff'), url('fonts/icomoon.svg?freep9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:hover {
+    color: #3B5998;
+}
+
+.icon-facebook:before {
+    content: "\ea91";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-twitter:hover {
+    color: #00ACED;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+  .navbar {
+    /*background: rgba(75, 91, 110, 0.8);*/
+    background: rgba(4,94,151, 0.6);
+    color: white;
+}
+
+    .navbar .logo {
+        margin: 10px;
+        font-weight: 800;
+        font-size: 19px;
+        outline: 0;
+    }
+
+    .icon-bar {
+        background: white;
+    }
+
+    .nav li a {
+        color: white;
+        outline: 0;
+    }
+
+    .nav li a:hover {
+        color: #337ab7;
+    }
+
+    .nav li a:focus {
+        background: transparent;
+    }
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_slud {
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 100px 0px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.logo_slud:hover {
+  transform: rotate(720deg);
+  transition: all 1.5s ease-in-out 0s;
+}
+
+.info {
+  background: url('../img/pattern_final.jpg') fixed;
+  background-color: #009c5a;
+  /*background-size: cover;
+  padding: 60px 0px;
+  height: auto;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+  .info__poster {
+    display: none;
+  }
+  .info__descripcion {
+    /*background: rgba(37, 165, 95, 0.7);*/
+    background: rgba(0,0,0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+  }
+  .info__descripcion h1 {
+    font-weight: bold;
+    font-weight: auto;
+    text-align: center;
+    font-family: 'Droid Serif';
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .info__descripcion p {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .info__boton {
+    background: #58BDFC;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 20px 10px;
+    margin-top: 30px;
+    border-radius: 5%;
+    cursor: pointer;
+    box-sizing: padding-box;
+  }
+    .info__boton:hover {
+      background: #AF711A;
+    }
+    .info__boton a {
+      text-decoration: none;
+      outline: 0;
+      color: white;
+      margin: 0px 20px;
+      font-weight: 700;
+    }
+
+.expositores {
+  /*background: #F6F6F6 fixed;*/
+  background: url('../img/p3.png');
+  background-attachment: fixed;
+  font-family: 'EB Garamond';
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+  .expositores h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: white;
+  }
+
+  .expositores__lista {
+    margin-top: 20px;
+  }
+
+    .lista__persona {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .lista__persona img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+
+    .lista__persona div {
+      margin-top: 10px;
+      font-weight: 400;
+      width: 100%;
+    }
+
+    .lista__persona div span {
+      display: block;
+      text-align: center;
+    }
+
+    .lista__persona div span:first-child {
+      background: rgba(0,219,96, 0.4);
+      color: white;
+      font-weight: 700;
+      padding: 10px 5px 5px 5px;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    .lista__persona div span:last-child {
+      margin: 5px 0px;
+      font-family: 'Roboto';
+      color: white;
+    }
+
+.agenda {
+  background: url('../img/bogota.jpg') fixed;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+  .agenda div {
+    border: none;
+  }
+
+  .agenda h2 {
+    color: white;
+  }
+
+  .agenda table {
+    background-color: #F6F6F6;
+    margin-bottom: 0;
+  }
+
+  .agenda thead {
+    margin-bottom: 0;
+  }
+  .agenda thead {
+    /* background: rgba(4,94,151, 1); */
+    background: #009c5a;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .agenda .dia {
+    background: #333333;
+  }
+
+  .agenda thead .span {
+    text-align: center;
+  }
+
+  .agenda .fecha {
+    text-align: center;
+    width: 15%;
+    max-width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+.ubicacion {
+  background: url('../img/map-pattern.png') fixed;
+  /* padding: 20px 0px; */
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+  .ubicacion .frame {
+    padding: 0px;
+  }
+
+  .ubicacion .direccion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .ubicacion .direccion img {
+    display: none;
+  }
+
+  .ubicacion .direccion .universidad {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    display: none;
+  }
+
+  .ubicacion .direccion .facultad {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+  }
+
+  .ubicacion .direccion .locacion {
+    display: block;
+  }
+
+.patrocinadores {
+  padding: 20px 0px;
+}
+
+  .patrocinadores .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .patrocinadores img {
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer {
+  background: url('../img/dark.png');
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: #ABB7B7;
+  /*color: white;*/
+}
+
+  footer a {
+    color: #ABB7B7;
+    margin-right: 5px;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  footer a:first-child {
+    margin-left: 15px;
+  }
+
+@media screen and (min-width: 768px) {
+  .nav li a:hover {
+    background: none;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  .lista__persona img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+  }
+  .info-container {
+    display: flex;
+  }
+  .info__poster {
+    display: block;
+    padding: 0;
+  }
+  .ubicacion .direccion .facultad {
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-container {
+    margin: 0;
+    padding: 0;
+  }
+  .info__descripcion h1 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .info__descripcion p {
+    font-size: 15px;
+  }
+  .agenda {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .agenda .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .direccion {
+    width: 100%;
+  }
+  .ubicacion .direccion  {
+    padding: 10px 0px;
+    height: 110px;
+  }
+  .ubicacion .direccion .universidad {
+    margin: 10px;
+  }
+  .ubicacion .frame {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .ubicacion .direccion img {
+    display: block;
+  }
+}
+@media screen and (max-width: 990px) {
+  .info__boton {
+    padding: 15px 10px;
+    margin: 5px 0px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .ubicacion .direccion .universidad {
+    display: block;
+  }
+}
